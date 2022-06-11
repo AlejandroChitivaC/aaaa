@@ -34,6 +34,6 @@ formulario.addEventListener("submit", async (esc) => {
     text: "Se ha añadido una obra de arte a la colección de" + coleccion,
     icon: "success",
   })
-  
+
   window.location = "../web/social.html";
 });

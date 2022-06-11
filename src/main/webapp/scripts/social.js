@@ -1,6 +1,3 @@
-/*
-Recuerda hacer el fetch con la URL de REST
- */
 //url donde están alojadas las imagenes y en la cual se añaden los nuevos NFT'S
 const url = " https://db-alejandro.herokuapp.com/obrasarte/";
 let campo = document.querySelector("#socialcard");
@@ -30,8 +27,8 @@ const getData = async () => {
                 <p>${precio}</p>
                 <p>${"Colección: " + coleccion}</p>
                 <p>${descripcion}</p>
-                <button id="btncomprar" style="border-radius:50px;width: 80px;height: 60px;margin-left: 150px;" class="btn btn-primary">Comprar</button>         
-                <button id="btnlikes" class="btn btn-primary" style="border-radius:50px;width: 80px;height: 60px;margin-left: 150px;" onclick="contar()">${likes} Like</button>
+                <button id="btncomprar" style="border-radius:50px;width: 100px;height: 60px;margin-left: 150px;" class="btn btn-primary">Comprar</button>         
+                <button id="btnlikes" class="btn btn-primary" style="border-radius:50px;width: 100px;height: 60px;margin-left: 150px; margin-top: 20px" onclick="contar()">${likes} Like</button>
             </div> 
         `;
   });
@@ -47,6 +44,7 @@ let userData = JSON.parse(data);
 
 if (userData.rol === "Comprador") {
   profilePicture.innerHTML = `<div>
+  <p>${userData.fcoins}</p>
   <a href="../web/perfil.html"><img style="margin-left:100px" class="profile-pic" src=${userData.imagen} alt="userPicture"/></a>
   <h5 style="color:white;font-weight:normal">${userData.name}</h5>
   </div>`;

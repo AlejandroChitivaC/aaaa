@@ -1,5 +1,4 @@
-// import Swal from 'sweetalert2'
-// const Swal = require('sweetalert2');
+
 let formulario = document.getElementById("ingresar");
 
 formulario.addEventListener("submit", async (esc) => {

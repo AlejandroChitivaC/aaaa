@@ -9,7 +9,7 @@ formulario.addEventListener("submit", async (esc) => {
   //capturando los datos del html y los voy a enviar a mi data.json
   let nombre = document.getElementById("name").value;
   let descr = document.getElementById("descripcion").value;
-  // let foto = document.getElementById("foto").value;
+  //let foto = document.getElementById("foto").value;
   let id = document.getElementById("id").value;
   let coleccion = document.getElementById("coleccion").value;
 
@@ -19,7 +19,7 @@ formulario.addEventListener("submit", async (esc) => {
     body: JSON.stringify({
       nombre: nombre,
       descripcion: descr,
-      // imagen: foto,
+      //imagen: foto,
       id: id,
       coleccion: coleccion,
       likes: 0,

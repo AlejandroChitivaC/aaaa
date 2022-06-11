@@ -82,7 +82,7 @@
   <div class="container">
     <div class="title">Registro</div>
     <div class="content">
-      <form id="regform" action="#">
+      <form id="regform" action="http://localhost:8080/RestTaller4-1.0-SNAPSHOT/api/users/register" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Nombre Completo</span>
@@ -111,7 +111,8 @@
           <div class="input-box">
             <label style="width: 100%" for="roleinput">
               <span class="details">Rol</span>
-              <select id="roleinput" name="rol" class="ms-1 edit body1Regular form-control">
+              <select id="roleinput" name="rol" class="ms-1 edit body1Regular form-control" required>
+                <option value=""></option>
                 <option name="Comprador" value="Comprador">Comprador</option>
                 <option name="Artista" value="Artista">Artista</option>
               </select>
